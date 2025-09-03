@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1 - Becoming Friends with Your Camera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h3 {
+            font-family: Georgia, serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #800000;
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        h4{
+            text-align: center;
+            font-size: 15px;
+            margin-top: 0;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 600px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+        .img-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .back {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #0044cc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面标题 -->
+    <h1>Programming Project #1</h1>
+    <h2>CS180: Intro to Computer Vision and Computational Photography</h2>
+    <h4>Student: Ruizhe Song(Rachel) 3042013172</h4>
+
+
+    <!-- 概述部分 -->
+    <div class="section">
+        <h3>Overview</h3>
+        <p>
+            Welcome to Rachel Song's imitator website of CS180/280! Here's my project 0. Does it look familiar? 🤔
+        </p>
+    </div>
+
+    <!-- Part 1 -->
+    <div class="section">
+        <h3>Part 1: Selfie — The Wrong Way vs. The Right Way</h3>
+        <p>
+            Here's 3 selfies of mine. Uploading the selfies is really a huge step for someone socially anxious like me.
+            The first selfie on the left was shot with a wide angle lens, which shows distortion. That's becuase the distance 
+            between me and my camera is too small. In order to keep my face the same size as the others, the focal length had 
+            to be smaller, thus leading to some sort of "barrel" distortion.
+        </p>
+        <div class="img-row">
+            <div>
+                <img src="media/selfie.jpg">
+                <div class="caption">Fig. 1. Selfies at different distances.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+    <div class="section">
+        <h3>Part 2: Architectural Perspective Compression</h3>
+        <p>
+            In this part, the situation is symmetrical to the Part 1. The fist picture was shot with a telephoto lens, which 
+            makes the architectures larger, however, also falttened. 
+        </p>
+        <div class="img-row">
+            <div>
+                <img src="media/building.jpg">
+                <div class="caption">Fig. 2. Campus Scene.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 3 -->
+    <div class="section">
+        <h3>Part 3: The Dolly Zoom</h3>
+        <p>
+            I choose my Cal cap as my model, and took 9 pictures of it at different distance. 
+            The GIF presents that the cap remains the same size while the focal length varies, 
+            forming a dolly zoom.
+        </p>
+        <div class="img-row">
+            <div>
+            <img src="media/dollyzoom.gif">
+            <div class="caption">Fig. 3. Dolly Zoom Effect</div>
+        </div>
+        </div>
+    </div>
+
+    <!-- 返回主页 -->
+    <div class="back">
+        <a href="../index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
