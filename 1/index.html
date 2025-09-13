@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project 1 - Images of the Russian Empire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h3 {
+            font-family: Georgia, serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            color: #800000;
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        h4{
+            text-align: center;
+            font-size: 15px;
+            margin-top: 0;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 400px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+        .img-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .back {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #0044cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programming Project #1</h1>
+    <h2>CS180: Intro to Computer Vision and Computational Photography</h2>
+    <h4>Student: Ruizhe Song(Rachel) 3042013172</h4>
+
+    <div class="section">
+        <h3>Overview</h3>
+        <p>
+            Use simple Euclid-norm to calculate the distance between 2 images when the size are small. When it comes to 
+            larger size images, use recur_align to align it with the help of image pyrimad, and adapt a more efficient 
+            metric to measure the distance, which is ncc, distance after normolization.
+        </p>
+    </div>
+
+    <!-- Part 1 -->
+    <div class="section">
+        <h3>Part 1: Example Images</h3>
+        <p>
+            Some results of the example data.
+        </p>
+        <div class="img-row" style="display: flex; gap: 20px;">
+            <div>
+                <img src="media/church.jpg" width="300">
+                <div class="caption">Fig. 1. Church, a large picture.</div>
+            </div>
+            <div>
+                <img src="media/tobolsk.jpg" width="300">
+                <div class="caption">Fig. 2. Tobolsk, a small picture.</div>
+            </div>
+            <div>
+                <img src="media/emir.jpg" width="300">
+                <div class="caption">Fig. 3. Emir, a large picture.</div>
+            </div>
+            <div>
+                <img src="media/people.jpg" width="300">
+                <div class="caption">Fig. 3. People, a large picture.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+    <div class="section">
+        <h3>Part 2: Prokudin-Gorskii collection</h3>
+        <p>
+            Some results of the data in Prokudin-Gorskii collection(my favorite pictures!).
+        </p>
+        <div class="img-row">
+            <div>
+                <img src="media/sunrise.jpg" width="300">
+                <div class="caption">Fig. 1. Sunrise on the sea.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part 3 -->
+    <div class="section">
+        <h3>Part 3: Bells and Whistles</h3>
+        <p>
+            Implemented a auto_crop function in align.py to crop the edges of the images, but seems not help that much.
+        </p>
+    </div>
+
+    <div class="back">
+        <a href="../index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
